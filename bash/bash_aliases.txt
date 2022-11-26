@@ -1,0 +1,8 @@
+alias  ss="sudo -i"
+alias  ll="ls -Fal"
+alias  home="ssh libetti@140.82.1.198"
+
+start () { sudo -i systemctl start "$@" ; }
+stop () { sudo -i systemctl stop "$@"; }
+restart () { sudo -i systemctl restart "$@"; }
+mkcd () { mkdir "$@" && cd "$@"; }
